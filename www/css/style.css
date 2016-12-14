@@ -1,0 +1,102 @@
+/* Empty. Add your own CSS if you like */
+.sprint-fontsize{
+  font-size: 15px !important;
+}
+.plus-position{
+  top: 1px !important;
+  right: 1px !important;
+}
+.menu-item-background{
+  background-color: #e8e8e8;
+}
+.chat-item.ng-enter {
+    -webkit-animation: fadeInLeft 1.5s;
+    animation: fadeInLeft 1.5s;
+}
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay:300ms;
+  animation-delay:300ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #000000;
+  opacity: 0.6;
+  z-index: 1000;
+  transition: all ease-out 0.5s;
+}
+.mywrapper
+{
+ top: 35px;
+}
+.profile_wrapper_custom
+{
+  top: 150px;
+}
+.edit_profile_pic
+{
+  top: 100px;
+}
+.login_width
+{
+  width:60%;
+}
+.icon
+{
+  font-size: 30px;
+}
+.center
+{
+  text-align: center;
+}
+a
+{
+  color: green;
+}
+.brand-custom{
+  font-size: 400%;
+}
+.input-wrapper-custom{
+  padding: 0 5% 0 5% ;
+}
+.button-custom
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.text-black span
+{
+  color: black;
+  font-weight: bold;
+}
+.item-divider
+{
+  background-color: rgb(59, 62, 60);
+  color: white;
+}
+.title-green span
+{
+    color: rgba(27, 175, 46, 0.89);
+    font-weight: bold;
+}
+.description-panel-size
+{
+  height: auto;
+}
+.edit_picture
+{
+  left: 30%;
+}
+.user-title
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(27, 175, 46, 0.89);
+  text-align: center;
+}

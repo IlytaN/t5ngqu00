@@ -1,0 +1,61 @@
+<ion-side-menus enable-menu-with-back-views="true" ng-controller="MenuCtrl">
+  <ion-side-menu-content>
+
+    <ion-nav-view view-title="partners">
+      <ion-view>
+        <div class="bar bar-header bar-light">
+          <h1 class="title">Project 1</h1>
+          <a class="button sprint-fontsize" ng-click="gotoAddpartner()">
+            <i class="icon ion-ios-plus-empty balanced"></i>
+            Add</a>
+          <button ng-click="trigger_open()" class="button icon ion-navicon" menu-toggle="right"></button>
+        </div>
+        <ion-content>
+            <div class="list has-header chat-item animated fadeInUp item-remove-animate">
+                  <div class="item item-avatar item-icon-right" ng-click="gotoUserBen()">
+                    <img src="/img/ben.png">
+                    <h2>Ben</h2>
+                    <i class="icon icon ion-chevron-right"></i>
+                  </div>
+                  <div class="item item-avatar item-icon-right">
+                    <img src="/img/max.png">
+                    <h2>Max</h2>
+                    <i class="icon icon ion-chevron-right"></i>
+                  </div>
+
+            </div>
+        </ion-content>
+      </ion-view>
+      <div id="partner_Overlay" ng-click="trigger_close()"></div>
+    </ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-stable">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon balanced"></i>
+        <input type="search" placeholder="Search">
+      </label>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-click="trigger_close()" class="item-icon-left" menu-close href="#/createproject">
+          <i class="icon ion-ios-plus-outline"></i>
+           Create new project
+        </ion-item>
+        <ion-item class="item-icon-left">
+          <i class="icon ion-ios-list-outline"></i>
+           Your projects
+        </ion-item>
+        <ion-item class="menu-item-background" ng-repeat="item in items">
+           Project {{item}}
+        </ion-item>
+        <ion-item ng-click="trigger_close()" class="item-icon-left" menu-close href="#/login" >
+          <i class="icon ion-ios-unlocked-outline"></i>
+          Log out
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

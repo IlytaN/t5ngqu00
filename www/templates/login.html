@@ -1,0 +1,44 @@
+
+<ion-nav-view >
+  <ion-view>
+    <ion-content class="padding mywrapper">
+      <div>
+        <div class="item-image">
+            <i class="icon icon ion-person brand-custom"></i>
+        </div>
+        <div class="apptitle">
+            <h2 class="center">PROmanager</h2>
+            <h4 class="center balanced padding-bottom">Manage your work easily</h4>
+        </div>
+
+        <div class="input-wrapper-custom">
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password">
+              </label>
+        </div>
+
+         <div class="row">
+              <div class="col text-center">
+                <button class="button login_width button-balanced" ng-click="gotoProfile()">
+                    Sign in
+                </button>
+              </div>
+            </div>
+
+        <p class="center padding-vertical">Don't have an account? <a href="#/signup">Sign up</a></p>
+        <h5 class="center">Or sign in now with:</h5>
+
+         <div class="center">
+                  <i class="icon icon ion-social-googleplus padding"></i>
+                  <i class="icon icon ion-social-facebook padding"></i>
+                  <i class="icon icon ion-social-twitter padding"></i>
+         </div>
+      </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>

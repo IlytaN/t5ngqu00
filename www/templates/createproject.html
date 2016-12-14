@@ -1,0 +1,45 @@
+<ion-nav-view view-title="createproject">
+  <ion-view>
+    <div class="bar bar-header bar-light">
+      <button class="button icon ion-chevron-left" ng-click="goBack()"> Back</button>
+      <h1 class="title">New project</h1>
+      <i class="button icon ion-checkmark" ng-click="goBack()"></i>
+    </div>
+    <ion-content>
+        <div class="list has-header text-black">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Project name</span>
+            <input type="text" placeholder="Type project name here">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Deadline</span>
+              <div class="">
+                <select class="" name="day">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+                <select class="" name="month">
+                  <option value="">January</option>
+                  <option value="">Febuary</option>
+                  <option value="">March</option>
+                </select>
+                <select class="" name="year">
+                  <option value="">2016</option>
+                  <option value="">2017</option>
+                  <option value="">2018</option>
+                </select>
+              </div>
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Project staff <i class="ion-plus balanced"></i></span>
+            <input type="text" placeholder="staff name">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Description</span>
+            <textarea class="" type="text" placeholder="Type the description for your project here"></textarea>
+          </label>
+        </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>

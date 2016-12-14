@@ -1,0 +1,22 @@
+<ion-nav-view view-title="partnerprofile">
+  <ion-view>
+    <div class="bar bar-header bar-light">
+      <button class="button icon ion-chevron-left" ng-click="goBack()"> Back</button>
+      <h1 class="title">Ben</h1>
+      <i class="button icon ion-checkmark" ng-click="goBack()"></i>
+    </div>
+    <ion-content class="padding edit_profile_pic">
+        <div class="item-image has-header">
+          <i class="icon icon ion-person brand-custom"></i>
+        </div>
+        <div class="list text-black">
+          <label class="item">
+            <span class="input-label">Working on projects: </span>
+            <ul ng-repeat="item in items" class="list chat-item" >
+                <li class="item chat-item animated fadeInLeft item-remove-animate">Project {{item}}</li>
+            </ul>
+          </label>
+        </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>
